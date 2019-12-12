@@ -9,10 +9,8 @@ def deg(point,data):
     return len(set(degrees)), degrees
     
 def nuker(data,point):
-	count = 0
 	final_angle = -1e-100
-	while count < 200:
-		count +=1
+	for count in range(1,201):
 		nukedx,nukedy = 0,0
 		nuked_dist = 1e99
 		angle = 10
